@@ -1,0 +1,102 @@
+### This configuration file includes inputs for comCIPHER
+### ComCIPHER will first read this file before iteration begins
+### The left side of the equation should not be changed!
+### To set the inputs, change the right side of following equation.
+### Note there are two empty spaces at the both ends of "=" => " = "
+###--------------------------------------
+###
+
+
+###--------------------------------------
+### This section is about information in input data
+
+Shared_Dimension = 100
+
+Unique_Dimension_In_Matrix1 = 78
+
+Unique_Dimension_In_Matrix2 = 76
+
+###=============================================================================
+### This section is the names of input files
+
+Matrix1_File_Name = Cancer_Drug_Gene2_Score_qnorm.txt
+
+Matrix2_File_Name = Cancer_Disease_Gene2_Score_qnorm.txt
+
+###=============================================================================
+### This section contains the parameters for the Bayesian model
+
+Num_Of_Co-Modules = 30
+
+Burn_In_Iteration = 10
+
+Sample_Stride = 5
+
+Total_Num_Of_Sample = 100
+
+###=============================================================================
+### This section is about output files and related parameters
+
+### Following three are estimated indicator probability of corresponding dimensions
+### Put an output file name at the right side of an equation.
+
+Indicator_Probability_For_Shared_Dimension = Cancer_Data_Ig_Indicator_Probability_M30.txt
+
+Indicator_Probability_For_Unique_Dimension_In_Matrix1 = Cancer_Data_Imd_Indicator_Probability_M30.txt
+
+Indicator_Probability_For_Unique_Dimension_In_Matrix2 = Cancer_Data_Imp_Indicator_Probability_M30.txt
+
+### Following five record the value of three indicator variables and two module 
+### 	center variables in each iteration.
+### Put an output file name at the right side of an equation.
+### If user do not want to monitor the process, put 0 for 'Whether_Write_Process'
+### Otherwise, put 1 for it.
+
+Whether_Record_Process = 1
+
+Record_File_For_Indicator_Of_Shared_Dimension = Cancer_Data_Ig_Sample_Process_M.txt
+
+Record_File_For_Indicator_Of_Unique_Dimension_In_Matrix1 = Cancer_Data_Imd_Sample_Process_M.txt
+
+Record_File_For_Indicator_Of_Unique_Dimension_In_Matrix2 = Cancer_Data_Imp_Sample_Process_M.txt
+
+Record_File_For_Module_Center_In_Matrix1 = .txt
+
+Record_File_For_Module_Center_In_Matrix2 = Cancer_Data_Beta_mip_Sample_Process_M.txt
+
+### Each line in above files presents corresponding value in one iteration. 
+### Matrix presentations of indicator and module center are stretched as one line.
+### For example, suppose Matrix1 is of size D*G. The indicator variable for dimension 
+###	D is a matrix. Suppose we set co-module number as M. After this indicator 
+###	variable is stretched as a line, the first D elements in this line represent
+###	the indicator in co-module 0, the NULL module; the elements from D+1 to 2D 
+###	are indicators in co-module 1; and so on... 
+### Same for module center.
+
+### We provide the following parameter to decide how many iteration will trigger 
+###	one output operation.
+
+Write_Batch = 50
+
+###=============================================================================
+### This section is about initial point for the Markov Chain. 
+### If not load initial point from files, the first indicator value should be 0, and 
+###     comCIPHER will skip the lines after.
+### If load initial point from files,, set 'Whether_Load_Initial_Point = 1'. In this case, users have to 
+###	specify files containing the three indicator variables as well as
+###	module center variables in a line format. Put file names for these 
+###	at the right side of the equations.
+
+Whether_Load_Initial_Point = 0
+
+Initial_Indicator_For_Shared_Dimension = -
+
+Initial_Indicator_For_Unique_Dimension_In_Matrix1 = -
+
+Initial_Indicator_For_Unique_Dimension_In_Matrix2 = -
+
+Initial_Module_Center_In_Matrix1 = -
+
+Initial_Module_Center_In_Matrix2 = -
+
+### end
