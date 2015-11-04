@@ -1,5 +1,5 @@
-### This configuration file includes inputs for comCIPHER
-### ComCIPHER will first read this file before iteration begins
+### This configuration file includes inputs for the softare.
+### It will first read this file before iteration begins.
 ### The left side of the equation should not be changed!
 ### To set the inputs, change the right side of following equation.
 ### Note there are two empty spaces at the both ends of "=" => " = "
