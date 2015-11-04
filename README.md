@@ -1,4 +1,4 @@
-# Bayesian partition method to learn co-module in two matrices
+# Bayesian partition method to learn co-modules in two matrices
 This repository contains a statistical model to find _co-module_ in two matrices
 sharing a common dimension. For details of the model please see http://bioinformatics.oxfordjournals.org/content/28/7/955.abstract
 
