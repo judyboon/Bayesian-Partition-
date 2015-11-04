@@ -11,6 +11,10 @@ related to bi-cluster problems that divide a single matrix into non-overlapping
 blocks that values within a block share similar pattern. Co-module extends this concept to 
 two matrices with a common dimension. 
 
+## About the folders
+* _code_ contains the source code of implementing the model
+* _realData_ contains the network data used in the original paper
+
 ## Code
 
 ### Compilation
