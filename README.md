@@ -14,10 +14,11 @@ two matrices with a common dimension.
 ## Code
 
 ### Compilation
-The code is written in c. Use Makefile to compile the source code to an executable file. 
+The code is written in C. Use Makefile to compile the source code to an executable file. 
 It requires installation of GNU Scientific Library (GSL). 
 Please make sure the library has been installed in your OS and the path is correctly specified 
 in _Makefile_
 
 ### Running
-
+The excutable file will read _configure_ in the folder before running. 
+The input files and parameters are needed to specified in the configure file.
