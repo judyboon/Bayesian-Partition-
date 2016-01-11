@@ -26,7 +26,7 @@ relations downloaded from [DrugBank database](http://www.drugbank.ca), disease-g
 relations downloaded from [OMIM database](http://www.omim.org) and 
 a comprehensive protein-protein iteration network generated from multiple reliable
 sources (see details in the [paper](http://bioinformatics.oxfordjournals.org/content/28/7/955.abstract)).
-If the real data are helpful to you please cite the paper.
+If the real data are used in your publication please notify the author and cite the paper.
 
 # Code
 
