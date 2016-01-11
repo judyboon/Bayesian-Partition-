@@ -14,7 +14,7 @@ dimension _d_ by _g_ and _p_ by _g_ respectively. A co-module is a pair of sub-m
 in _Y_ and _Z_ that share a significant pattern in contrast to other values. It is 
 related to bi-cluster problems that divide a single matrix into non-overlapping
 blocks that values within a block share similar pattern. Co-module extends this concept to 
-two matrices with a common dimension. 
+two matrices. 
 
 # About the folders
 * _code_ contains the source code of implementing the model
