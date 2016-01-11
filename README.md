@@ -1,6 +1,6 @@
 # Bayesian partition method to learn co-modules in two matrices
 This repository contains a statistical model to find _co-module_ in two matrices
-sharing a common dimension. For details of the model please see http://bioinformatics.oxfordjournals.org/content/28/7/955.abstract
+sharing a common dimension. For details of the model please see http://bioinformatics.oxfordjournals.org/content/28/7/955.abstract.
 
 ## License
 This software is distributed under the terms of the GNU General Public 
@@ -18,7 +18,7 @@ two matrices with a common dimension.
 
 # About the folders
 * _code_ contains the source code of implementing the model
-* _realData_ contains the network data used in the original paper. 
+* _realData_ contains the network data used in the original paper
 
 ## About real data
 The real data used in the published paper contain the drug-target 
@@ -34,7 +34,7 @@ If the real data are used in your publication please notify the author and cite 
 The code is written in C. Use Makefile to compile the source code to an executable file. 
 It requires installation of GNU Scientific Library (GSL). 
 Please make sure the library has been installed in your OS and the path is correctly specified 
-in _Makefile_
+in _Makefile_.
 
 ## Running
 The excutable file will read _configure_ in the folder before running. 
