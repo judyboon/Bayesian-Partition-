@@ -1,14 +1,6 @@
 #ifndef HEADER_H
 #define HEADER_H
 
-#include<stdio.h>
-#include<string>
-#include<iostream>
-#include<fstream>
-#include<vector>
-#include <gsl/gsl_matrix.h>
-
-using namespace std;
 ////////////////////////// Module couts
 typedef struct
 {
