@@ -18,7 +18,15 @@ two matrices with a common dimension.
 
 # About the folders
 * _code_ contains the source code of implementing the model
-* _realData_ contains the network data used in the original paper
+* _realData_ contains the network data used in the original paper. 
+
+## About real data
+The real data used in the published paper contain the drug-target 
+relations downloaded from [DrugBank database](http://www.drugbank.ca), disease-gene 
+relations downloaded from [OMIM database](http://www.omim.org) and 
+a comprehensive protein-protein iteration network generated from multiple reliable
+sources (see details in the [paper](http://bioinformatics.oxfordjournals.org/content/28/7/955.abstract)).
+If the real data are helpful to you please cite the paper.
 
 # Code
 
